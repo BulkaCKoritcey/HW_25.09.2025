@@ -65,10 +65,11 @@ def order():
     total = reduce(lambda x, y: x + y, order.values(), 0)
     
     print("\nВаш заказ:")
-    list(map(lambda x: print(f"{x[0]+1}. {x[1][0].capitalize()} — {x[1][1]} руб."), 
+    list(map(lambda x: print(f"{x[0]+1}. {x[1][0].capitalize()} — {x[1][1]}"), 
              enumerate(order.items())))
-    print(f"Итого: {total} руб.")
+    print(f"Итого: {total}")
     
+
 
 
 
